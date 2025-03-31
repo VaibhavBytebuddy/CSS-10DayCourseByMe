@@ -1,0 +1,85 @@
+# Day 2: CSS Box Model & Layout Fundamentals
+
+Today we'll learn about the core concept that controls layout in CSS - the Box Model!
+
+## 1. The Box Model Components
+
+Every element is a rectangular box with these properties:
+```css
+selector {
+  width: 300px;         /* Content width */
+  height: 200px;        /* Content height */
+  padding: 20px;        /* Space inside border */
+  border: 5px solid black; /* Border around padding */
+  margin: 30px;         /* Space outside border */
+}
+```
+
+## 2. Box Model Example
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .box {
+    width: 200px;
+    height: 150px;
+    background-color: lightblue;
+    padding: 20px;
+    border: 5px solid navy;
+    margin: 30px;
+  }
+
+  .box-alt {
+    box-sizing: border-box; /* Alternative model */
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+    padding: 20px;
+    border: 5px solid red;
+    margin: 30px;
+  }
+</style>
+</head>
+<body>
+  <div class="box">Standard Box Model</div>
+  <div class="box-alt">Border-Box Model</div>
+</body>
+</html>
+```
+
+Key differences:
+- Standard: `width` = content only
+- Border-box: `width` = content + padding + border
+
+## 3. Common Layout Properties
+
+```css
+/* Display property */
+.inline {
+  display: inline; /* Doesn't accept width/height */
+}
+
+.block {
+  display: block; /* Takes full width */
+}
+
+.inline-block {
+  display: inline-block; /* Mix of both */
+}
+
+/* Centering techniques */
+.center-box {
+  margin: 0 auto; /* Horizontal centering */
+  text-align: center; /* Text centering */
+}
+```
+
+## Practice Task:
+1. Create three divs:
+   - First: Standard box model (300px wide, 20px padding, 5px border)
+   - Second: Border-box model (same dimensions)
+   - Third: Centered box with some content
+2. Experiment with display properties on span and div elements
+
+Would you like to proceed to Day 3 (Positioning and Flexbox) or would you like more box model practice?

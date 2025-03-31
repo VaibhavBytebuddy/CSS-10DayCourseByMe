@@ -1,0 +1,23 @@
+.box {
+          border: 2px solid navy;
+          width: 200px;
+          height: 150px;
+          background-color: lightblue;
+          padding: 20px;
+          display: inline;
+          margin: 30px;
+        }
+.box-alt{
+          
+                    border: 1px solid #000;
+                    height: 150px;
+                    width: 200px;
+                    display: inline;
+                    /* display: inline; //doesnt accept width and height */
+                    box-sizing: border-box;
+                    
+                    background-color: pink;
+                    padding: 20px;
+                    margin: 30px;
+                  
+}
