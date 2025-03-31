@@ -1,0 +1,76 @@
+# 10-Day CSS & Bootstrap Crash Course
+
+Great! Let's learn CSS and Bootstrap together over the next 10 days. I'll start with the fundamentals and build up to more advanced concepts, with examples for each.
+
+## Day 1: CSS Basics & Selectors
+
+### 1. CSS Syntax
+CSS has a simple syntax: selector + declaration block.
+
+```css
+selector {
+  property: value;
+}
+```
+
+### 2. Basic Selectors
+```css
+/* Element selector */
+p {
+  color: blue;
+}
+
+/* Class selector */
+.highlight {
+  background-color: yellow;
+}
+
+/* ID selector */
+#main-title {
+  font-size: 24px;
+}
+```
+
+### Example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Element selector */
+  p {
+    color: blue;
+  }
+  
+  /* Class selector */
+  .highlight {
+    background-color: yellow;
+  }
+  
+  /* ID selector */
+  #main-title {
+    font-size: 24px;
+    color: red;
+  }
+</style>
+</head>
+<body>
+  <h1 id="main-title">Welcome to CSS!</h1>
+  <p>This is a paragraph with blue text.</p>
+  <p class="highlight">This paragraph has a yellow background.</p>
+  <div class="highlight">This div also has a yellow background.</div>
+</body>
+</html>
+```
+
+### Practice Task:
+1. Create an HTML file with:
+   - A heading with ID "header"
+   - 3 paragraphs, one with class "important"
+   - A div with class "important"
+2. Add CSS to:
+   - Make the header green
+   - Make all paragraphs have font-size 18px
+   - Give the "important" class a red border
+
+Would you like me to continue with Day 2 (Box Model) after you've practiced this, or would you like to dive deeper into selectors first?
