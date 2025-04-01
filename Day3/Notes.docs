@@ -1,0 +1,130 @@
+# Day 3: CSS Positioning & Flexbox
+
+Today we'll learn how to control element positioning and create flexible layouts!
+
+## 1. CSS Positioning
+
+```css
+.static {
+  position: static; /* Default */
+}
+
+.relative {
+  position: relative; /* Relative to normal position */
+  top: 20px;
+  left: 30px;
+}
+
+.absolute {
+  position: absolute; /* Relative to nearest positioned ancestor */
+  top: 0;
+  right: 0;
+}
+
+.fixed {
+  position: fixed; /* Relative to viewport */
+  bottom: 20px;
+  right: 20px;
+}
+
+.sticky {
+  position: sticky; /* Hybrid of relative and fixed */
+  top: 0;
+}
+```
+
+## 2. Flexbox Basics
+
+Flexbox makes responsive layouts much easier:
+
+```css
+.container {
+  display: flex;
+  flex-direction: row; /* or column */
+  justify-content: center; /* Main axis alignment */
+  align-items: center; /* Cross axis alignment */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.item {
+  flex: 1; /* Grow/shrink proportionally */
+}
+```
+
+## Complete Example
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: Arial; margin: 0; }
+
+  /* Positioning */
+  .box {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    margin: 10px;
+  }
+  
+  .relative-box {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    background: gold;
+  }
+  
+  .fixed-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #333;
+    color: white;
+  }
+
+  /* Flexbox */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    border: 2px dashed #333;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .flex-item {
+    width: 80px;
+    height: 80px;
+    background: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <h2>Positioning Examples</h2>
+  <div class="box">Static</div>
+  <div class="box relative-box">Relative</div>
+  
+  <button class="fixed-btn">Fixed Position</button>
+  
+  <h2>Flexbox Example</h2>
+  <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+</body>
+</html>
+```
+
+## Practice Task:
+1. Create a navigation bar using flexbox (horizontal menu)
+2. Make a "back to top" button with fixed positioning
+3. Experiment with relative/absolute positioning to overlap elements
+
+Would you like to proceed to Day 4 (CSS Grid) or dive deeper into flexbox?
