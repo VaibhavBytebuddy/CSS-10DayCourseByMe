@@ -1,0 +1,50 @@
+body{
+          font-family: Arial;
+          margin:0;
+}
+.box{
+          
+                    width: 100px;
+                    height: 100px;
+                    background: tomato;
+                    margin: 10px;
+}
+.relative-box{
+
+ position: relative;
+  top: 30px;
+  left: 50px;
+  background: gold;
+
+}
+.fixed-btn{
+   position: fixed;
+  bottom: 20px;
+  right: 20px;
+ 
+  padding: 10px;
+  background: #333;
+  color: white;
+
+}
+
+.flex-container
+{
+          display: flex;
+          justify-content: space-between;
+          border: 2px dashed #333;
+          padding: 20px;
+          margin-top: 50px;
+        
+}
+.flex-item{
+  width: 80px;
+  height: 80px;
+  background: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+
+}
